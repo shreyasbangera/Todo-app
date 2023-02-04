@@ -1,82 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .App{
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
-  font-family: Verdana;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to bottom right, #0172af, #74febd )
 }
 
 .container{
   display: flex;
   flex-direction: column;
+  color: white;
   align-items: center;
   height: 70vh;
-  border: 1px solid black;
   padding: 20px;
-  width: 500px;   
+  width: 60%;  
+  box-shadow: 0px 10px 20px 15px rgba(0,0,0,0.1);
+  background-color: rgba(204, 204, 204, 0.3);
+  border-radius: 25px; 
 }
 
 .todoinput{
   display: flex;
   justify-content: center;
-  width: 400px; 
+  width: 60%; 
   margin-top: 10px;
 }
 
 input{
    padding: 12px;
-   width: 80%;
+   width: 100%;
    border-radius: 25px;
-   border: 1px solid;
+   border: none;
 }
 
 button{
   padding: 10px;
-  border-radius: 20px;
-  border: 1px solid black;
+  border-radius: 1rem;
+  border:none;
   margin-left: 5px;
-  background-color: blueviolet;
+  background-color: #0172af;
   color: white;
+  cursor: pointer;
 }
 
 .todolist{
   margin-top: 10px;
-  width: 400px;
-  padding: 0;  
+  width: 60%;
+  padding:0;
 }
 
 .singletodo{
   list-style: none;
   margin-top: 10px;
   display: flex;
-  padding: 5px;
-  border: 1px solid black;
+  padding: 10px;
+  padding-left: 12px;
+  border: none;
   border-radius: 50px;
   align-items: center;
-  background-color: blueviolet;
+  background-color: #0172af;
   color: white;
 }
 
 .todotext{
   flex:1;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .listbtn{
-  background-color: white;
-  color: black;
+  color: white;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
-@media screen and (max-width: 450px) {
-.container{
-  border: none;
-}
-.todoinput{
-  width: 300px;
+.checked {
+  color: #fff;
+  text-decoration: line-through;
 }
 
-.todolist{
-  width: 300px;
+
+@media screen and (max-width:768px){
+  .container{
+    width: 80%;
+  }
+
+  .todoinput, .todolist{
+    width: 90%;
+  }
+
 }
-  
-}
+
+
