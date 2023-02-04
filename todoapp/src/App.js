@@ -49,7 +49,7 @@ function App() {
   return (
     <div className='App'>
     <div className='container'>
-    <h1>Todo List App</h1>
+    <h1>To-do List App</h1>
     <Todoinput handleSubmit={handleSubmit} todo={todo} setTodo={setTodo} editId={editId} />
     <Todolist todos={todos} handleDelete={handleDelete} handleEdit={handleEdit} />
     </div>

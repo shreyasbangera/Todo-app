@@ -37,13 +37,13 @@ body{
 input{
    padding: 12px;
    width: 100%;
-   border-radius: 25px;
+   border-radius: 10px;
    border: none;
 }
 
 button{
   padding: 10px;
-  border-radius: 1rem;
+  border-radius: 10px;
   border:none;
   margin-left: 5px;
   background-color: #0172af;
@@ -64,7 +64,7 @@ button{
   padding: 10px;
   padding-left: 12px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   align-items: center;
   background-color: #0172af;
   color: white;
